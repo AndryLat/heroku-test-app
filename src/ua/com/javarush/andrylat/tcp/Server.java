@@ -8,11 +8,11 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Server {
-    private static final int DEFAULT_PORT = 80;
+    private static final String DEFAULT_PORT = System.getenv("PORT");
 
     public static void main(String[] args) {
         try {
-            ServerSocket server = new ServerSocket(DEFAULT_PORT);
+            ServerSocket server = new ServerSocket(DEFAULT_PORT!=null? Integer.parseInt(DEFAULT_PORT):8000);
             System.out.println("Server Started");
             System.out.println("Server port: " + server.getLocalPort());
 
