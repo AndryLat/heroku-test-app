@@ -1,0 +1,8 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ua.com.javarush.andrylat</groupId>
+    <artifactId>tcp</artifactId>
+    <version>1</version>
+
+</project>
